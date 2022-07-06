@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
   void getChatBotReply(String userReply) async {
     _txtController.clear();
     var response = await http.get(Uri.parse(
-        "http://api.brainshop.ai/get?bid=167356&key=e6tFkq6ZISxTtYXn&uid=[dp_25]&msg=[$userReply"));
+        "http://api.brainshop.ai/get?bid=167709&key=PAACPCVa484J8o9C&uid=gshrutha&msg=$userReply"));
     var data = jsonDecode(response.body);
     var botReply = data["cnt"];
     Message msg= Message(
